@@ -56,11 +56,11 @@ class ProductBarState extends State<ProductBar> {
     });
   }
 
-  @override
-  void dispose() {
-    searchController.dispose();
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   searchController.dispose();
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +116,7 @@ class ProductBarState extends State<ProductBar> {
                       ),
                     )
                   : filterLists.isEmpty
-                      ? const Center(child: Text('No products found.'))
+                      ? const Center(child: Text('No products found New.'))
                       : ListView.builder(
                           itemCount: filterLists.length,
                           itemBuilder: (context, index) {
